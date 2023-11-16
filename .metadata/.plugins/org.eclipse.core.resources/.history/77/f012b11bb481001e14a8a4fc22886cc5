@@ -1,0 +1,71 @@
+package unit4;
+
+import java.util.Scanner;
+
+/*(Student major and status) Write a program that prompts the user to enter two
+characters and displays the major and status represented in the characters. The first
+character indicates the major and the second is number character 1, 2, 3, 4, which
+indicates whether a student is a freshman, sophomore, junior, or senior. Suppose
+the following characters are used to denote the majors:
+
+I: Information Management
+C: Computer Science
+A: Accounting
+
+1. freshman
+2. sophomore
+3. junior
+4. senior
+
+Enter a letter for your Major, and a number for your status: \nI: Information Management \nC: Computer Science \nA: Accounting \n\n1. freshman \n2. sophomore \n3. junior \n4. senior
+*/
+public class StudentMajorAndStatus {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a letter for your Major, and a number for your status: \nI: Information Management \nC: Computer Science \nA: Accounting \n\n1. freshman \n2. sophomore \n3. junior \n4. senior\n");
+		String s01 = input.nextLine();
+		
+		String major = s01.substring(0, 1);
+		String year = s01.substring(1);
+		
+		String i = "I";
+		String c = "C";
+		String a = "A";
+		
+		
+		System.out.println("you have entered major: " + major );
+		System.out.println("you have entered year: " + year );
+		
+		if (major.equalsIgnoreCase(i))
+		System.out.print("Information Management");
+		if (major.equalsIgnoreCase(c))
+		System.out.print("Computer Science");
+		if (major.equalsIgnoreCase(a))
+		System.out.print("Accounting");
+
+		
+		if (year.equals("1"))
+			System.out.print(" Freshman");
+		if (year.equals("2"))
+			System.out.print(" Sophomore");
+		if (year.equals("3"))
+			System.out.print(" Junior");
+		if (year.equals("4"))
+			System.out.print(" Senior");
+		
+
+		
+		/*if (letter == 'I')
+			System.out.print(i);
+		else if (letter == 'C')
+			System.out.print(c);
+		else if (letter == 'A')
+			System.out.print(a);
+		*/
+		
+		//System.out.println("You have selected '" + major + "' in " + year + " year.");
+	}
+
+}

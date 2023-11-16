@@ -1,0 +1,25 @@
+package practice;
+
+
+
+public class OutputPredictor {
+	public static void main(String[] args) {
+		
+	String s = "somethingaboutJava";
+	if(s.charAt(s.length() - 4) == 'J' && s.charAt(s.length() - 3) == 'a' && s.charAt(s.length() - 2) == 'v' && s.charAt(s.length() - 1) == 'a');
+		System.out.println(" A will work, but is not correct. ");
+
+	if (s.lastIndexOf("Java") >= 0)
+		System.out.println(" B will work. ");
+
+	if (s.substring(s.length() - 4).equals("Java"))
+		System.out.println(" C will work. ");
+	
+	if (s.endsWith("Java"))
+		System.out.println(" D will work. ");
+	
+	if (s.substring(s.length() - 5).equals("Java"))
+		System.out.println(" E will work. ");
+	}
+}
+

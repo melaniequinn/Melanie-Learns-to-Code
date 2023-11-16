@@ -1,0 +1,42 @@
+package unit4;
+import java.util.*;
+//ENTER THE FIRST COUNTRY: Enter the second country: Enter the third country:
+//The three countries in descending order are S G F 
+//compare strings and use if statements w results to order the input
+public class AlphabetizeCountries {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter the first country: ");
+		String country1 = input.nextLine();
+		System.out.print("Enter the second country: ");
+		String country2 = input.nextLine();
+		System.out.print("Enter the third country: ");
+		String country3 = input.nextLine();
+		
+		System.out.println("The countries in descending (reverse alphabetical) order are: ");
+		
+		if (country1.compareToIgnoreCase(country3) > 0) { //1 is larger than 3
+			if (country1.compareToIgnoreCase(country2) > 0) //1 is also larger than 2
+				System.out.println(country1 + country2 + country3); //1>2>3
+			else
+				System.out.println(country2 + country1 + country3); //2>1>3
+		}
+		else if (country1.compareToIgnoreCase(country2) > 0 ) {//1 is larger than 2
+			if (country1.compareToIgnoreCase(country3) > 0 ) //1 is larger than 3
+				System.out.println(country3 + country2 + country1); // 3>2>1
+			else
+				System.out.println(country2 + country1 + country3); //1 is smaller than 3... 2<1<3
+		}
+		else if (country1.compareToIgnoreCase(country3) < 0 ) {//1 is smaller than 3
+			if (country1.compareToIgnoreCase(country2) > 0 ) //1 is larger than 2
+				System.out.println(country3 + country1 + country2); // 3>1>2
+			else
+				System.out.println(country3 + country1 + country2);//1 is smaller than 2 || 3>1<2
+		}
+		//else 
+		//System.out.println("The countries in descending (reverse alphabetical) order are " + 3 + 2 + 1);
+	}
+
+}

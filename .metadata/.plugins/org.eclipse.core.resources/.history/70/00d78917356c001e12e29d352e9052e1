@@ -1,0 +1,13 @@
+import java.util.*;
+public class CastOut {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		System.out.println("Falling throught space.... \nYou wonder if it was worth it...");
+		System.out.println("What should you do? \n1. Give in to the void and let the darkness take you. \n2. Search for a place to land. \n3.");
+		System.out.println("");
+		
+		
+		
+	}
+}

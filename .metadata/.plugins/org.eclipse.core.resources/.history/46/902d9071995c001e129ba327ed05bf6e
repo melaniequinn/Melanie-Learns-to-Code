@@ -1,0 +1,14 @@
+package unit2;
+
+public class TipCalculator {
+	/* A program that reads the subtotal and the gratuity rate,
+	 need: printline, input (scanner for subtotal),printline, input(scanner for gratuity %)
+	 then computes the gratuity and final total */
+
+	public static void main(String[] args) {
+		System.out.println ("Enter subtotal (the total before gratuity): ")
+		System.in.println (double scanner.)
+
+	}
+
+}

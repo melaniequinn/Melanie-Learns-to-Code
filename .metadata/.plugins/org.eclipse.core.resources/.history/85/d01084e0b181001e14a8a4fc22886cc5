@@ -1,0 +1,76 @@
+package unit4;
+
+import java.util.Scanner;
+
+/*(Student major and status) Write a program that prompts the user to enter two
+characters and displays the major and status represented in the characters. The first
+character indicates the major and the second is number character 1, 2, 3, 4, which
+indicates whether a student is a freshman, sophomore, junior, or senior. Suppose
+the following characters are used to denote the majors:
+
+I: Information Management
+C: Computer Science
+A: Accounting
+
+1. freshman
+2. sophomore
+3. junior
+4. senior
+
+Enter a letter for your Major, and a number for your status: \nI: Information Management \nC: Computer Science \nA: Accounting \n\n1. freshman \n2. sophomore \n3. junior \n4. senior
+*/
+public class StudentMajorAndStatus {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a letter for your Major, and a number for your status: \nI: Information Management \nC: Computer Science \nA: Accounting \n\n1. freshman \n2. sophomore \n3. junior \n4. senior\n");
+		String s01 = input.next();
+		
+		String s1 = s01.substring(0, 1);
+		String s2 = s01.substring(1, 2);
+		System.out.println("s1 is: " + s1 + " and s2 is: " + s2);
+		
+		System.out.println("You have entered " + s1 + s2);
+		String i = "Information Management";
+		String c = "Computer Science";
+		String a = "Accounting";
+		
+		//String ch = s01.charAt(0);
+		/*
+		if (ch.equalsIgnoreCase(i))
+		System.out.print(i);
+		if (ch == 'C')
+		System.out.print(c);
+		if (ch == 'A')
+		System.out.print(a);
+
+
+		String s1 = "freshman";
+		String s2 = "sophomore"; 
+		String s3 = "junior";
+		String s4 = "senior";
+		
+		if (s01.contains(s1))
+		System.out.print(s1);
+		if (s01.contains(s2))
+		System.out.print(s2);
+		if (s01.contains(s3))
+		System.out.print(s3);
+		if (s01.contains(s4))
+		System.out.print(s4);
+		
+*/
+		
+		/*if (letter == 'I')
+			System.out.print(i);
+		else if (letter == 'C')
+			System.out.print(c);
+		else if (letter == 'A')
+			System.out.print(a);
+		*/
+		
+		//System.out.println("You have selected '" + major + "' in " + year + " year.");
+	}
+
+}

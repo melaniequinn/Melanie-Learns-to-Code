@@ -1,0 +1,13 @@
+package practice;
+
+
+
+public class OutputPredictor {
+	public static void main(String[] args) {
+	char what ='A'+1;
+	System.out.println(what);
+	System.out.println("AbA".compareToIgnoreCase("abC"));	
+		
+	}
+}
+

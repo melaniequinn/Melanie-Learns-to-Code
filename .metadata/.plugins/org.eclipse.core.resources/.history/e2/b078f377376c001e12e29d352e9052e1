@@ -1,0 +1,19 @@
+import java.util.*;
+public class CastOut {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		
+		System.out.println("Falling throught space.... \nYou wonder if it was worth it...");
+		System.out.println("What should you do?");
+		System.out.println("1. Give in to the void and let the darkness take you. \n2. Search for a place to land and begin your plot to overtake the planet. \n3. Find a new home and start a new life.");
+		double answer1 = input.nextDouble();
+		
+		if ( answer1 == 1 ) 
+			System.out.println("You close your eyes and float aimlessly for an indeterminable amount of time. \nYou reminisce about your quiet old life on Uozoa in the Neutral Zone. \nEverything and everyone, always placid. \nNeutral weather, neutral politics, and neutral relationships. \n\nWhere was the fun in that?\n\nIronically, that is all there will ever be again for you as you float through nothingness pointlessly. \nSo in the end, \nWas it worth it?\n\nGame Over.");
+		if ( answer1 == 2 ) {
+			System.out.println("It's time to focus, you tell yourself. \n You scan ahead, and three planets look to be in range. \nWhich one looks like a good planet to overtake?");
+			
+		
+		}
+	}
+}
